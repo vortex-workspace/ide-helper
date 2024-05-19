@@ -1,0 +1,47 @@
+{
+  "name": "vortex-workspace/ide-helper",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "keywords": [
+    "ide helper",
+    "ide",
+    "vortex"
+  ],
+  "authors": [
+    {
+      "name": "Caio Albuquerque",
+      "email": "abcv.tenorio@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "~8.3.0"
+  },
+  "require-dev": {
+    "composer/composer": "*",
+    "symfony/var-dumper": "~7.0.7",
+    "fakerphp/faker": "~v1.23.1",
+    "phpunit/phpunit": "~10.5.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "IdeHelper\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IdeHelper\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "vortex": {
+      "providers": [
+        "IdeHelper\\IdeHelperProvider"
+      ]
+    }
+  }
+}
